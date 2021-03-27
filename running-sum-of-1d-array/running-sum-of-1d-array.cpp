@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-vector<int> runningSum(vector<int>& nums) {
+vector<int> running_sum(vector<int>& nums) {
     vector<int> output;
     int sum = 0;
     for (int value : nums) {
@@ -16,5 +16,9 @@ vector<int> runningSum(vector<int>& nums) {
 }
 int main()
 {
-    
+    vector<int> numbers = { 1,2,3,4 };
+    vector<int> sum = running_sum(numbers);
+    for (int value : sum) {
+        cout << value << endl;
+    }
 }
